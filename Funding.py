@@ -16,7 +16,7 @@ from dash import dcc, html, Input, Output  # Dash 2.x syntax
 
 
 # Define path
-data_dir = '/Users/lbs1678/Desktop/Bibliometrics/FundingData/data'  # update with your actual path
+data_dir = 'data'  # update with your actual path
 
 excel_files = glob.glob(os.path.join(data_dir, '*.xlsx'))
 
@@ -531,5 +531,6 @@ def update_top20_table(selected_subfield):
 
 
 # Run the App
-if __name__ == "__main__":
+if __name__ == '__main__':
+    # For local development, you might want to use debug mode.
     app.run_server(debug=True)

@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Cleaning data
-
-# Import necessary packages
 import os
 import glob
 import pandas as pd
@@ -19,7 +16,7 @@ from dash import dcc, html, Input, Output  # Dash 2.x syntax
 
 
 # Define path
-data_dir = '/Users/lbs1678/Desktop/Bibliometrics/FundingData'  # update with your actual path
+data_dir = '/Users/lbs1678/Desktop/Bibliometrics/FundingData/data'  # update with your actual path
 
 excel_files = glob.glob(os.path.join(data_dir, '*.xlsx'))
 
@@ -120,9 +117,6 @@ all_data.to_csv('/Users/lbs1678/Desktop/Bibliometrics/FundingData/all_data.csv',
 
 # Save as Excel
 all_data.to_excel('/Users/lbs1678/Desktop/Bibliometrics/FundingData/all_data.xlsx', index=False)
-
-
-# # Data Visualization
 
 # Aggregate funding data
 
@@ -405,11 +399,11 @@ fig_choropleth.update_geos(
 # fig_choropleth.show()
 
 # Save graphs
-fig_funder.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/aggregated_funding_by_funder.png", scale=2)
-fig_sub.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/aggregated_funding_by_subfield.png", scale=2)
-fig_breakdown.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/breakdown_by_subfield_and_funder.jpeg", scale=2)
-fig_country.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/funding_by_research_country.png", scale=2)
-fig_choropleth.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/map_funding_by_country.png", scale=2)
+# fig_funder.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/aggregated_funding_by_funder.png", scale=2)
+# fig_sub.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/aggregated_funding_by_subfield.png", scale=2)
+# fig_breakdown.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/breakdown_by_subfield_and_funder.jpeg", scale=2)
+# fig_country.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/funding_by_research_country.png", scale=2)
+# fig_choropleth.write_image("/Users/lbs1678/Desktop/Bibliometrics/FundingData/Graphs/map_funding_by_country.png", scale=2)
 
 
 # Get a sorted list of unique subfields

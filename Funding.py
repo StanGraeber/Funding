@@ -113,10 +113,10 @@ all_data = all_data.sort_values(by="Funding (USD)", ascending=False)
 
 
 # Save as CSV
-#all_data.to_csv('/Users/lbs1678/Desktop/Bibliometrics/FundingData/data/all_data.csv', index=False)
+all_data.to_csv('data/all_data.csv', index=False)
 
 # Save as Excel
-#all_data.to_excel('/Users/lbs1678/Desktop/Bibliometrics/FundingData/data/all_data.xlsx', index=False)
+all_data.to_excel('data/all_data.xlsx', index=False)
 
 # Aggregate funding data
 

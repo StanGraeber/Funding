@@ -1,2 +1,2 @@
 # Funding
-Dash app for data analysis of funding data in physics 
+Minimal Dash app for analysis of funding data in different physics subfields

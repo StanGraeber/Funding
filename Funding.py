@@ -179,6 +179,7 @@ custom_template.layout.font = dict(
 pio.templates.default = custom_template
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     # Year range slider at the top (or inside a tab—your choice)
